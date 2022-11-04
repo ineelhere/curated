@@ -4,7 +4,7 @@ from streamlit_extras.colored_header import colored_header
 from custom_functions import *
 
 display_banner()
-add_logo("https://raw.githubusercontent.com/ineelhere/curated/media/media/ic_curated_logo.png")
+# add_logo("https://raw.githubusercontent.com/ineelhere/curated/media/media/ic_curated_logo.png")
 
 colored_header(
     label="Welcome to CURATED 😎",
