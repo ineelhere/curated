@@ -17,4 +17,6 @@ st.text("\n")
 
 goto_page("I want to learn Python 🐍", "Python 101")
 
-st.image("https://harmony.imgix.net/https%3A%2F%2Fcollectiveidea.harmonycms.com%2Fassets%2Ffangirl.gif?auto=compress&s=ecc5cf01f62905da19ccca763481d747")
+st.image("https://media.tenor.com/P2cQctPfjpAAAAAC/im-working-on-it-progress.gif")
+
+footer()

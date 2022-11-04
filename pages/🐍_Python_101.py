@@ -20,4 +20,6 @@ urls_list = get_playlist_video_urls("https://www.youtube.com/playlist?list=PLhQj
 for i in urls_list:
     embed_yt_video(i)
     
-goto_page("Take me Home!", "curatED")
+goto_page("Go to the beginning 🐍", "Python 101")
+
+footer()
