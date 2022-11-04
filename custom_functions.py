@@ -4,7 +4,7 @@ from pytube import *
 from streamlit_player import st_player
 
 def display_banner():
-    st.image("media\ic_curated_banner.png")
+    st.image("https://raw.githubusercontent.com/ineelhere/curated/media/media/ic_curated_banner.png")
 
 def goto_page(display_text, destination_page):
     if st.button(display_text):
