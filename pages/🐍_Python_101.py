@@ -18,7 +18,7 @@ Go ahead and binge watch the videos! 😉
 ___
 """)
 
-yt_content("https://www.youtube.com/playlist?list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V")
+yt_content_live("https://www.youtube.com/playlist?list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V")
 
 goto_page("Take me Home 🏠", "curatED")
 

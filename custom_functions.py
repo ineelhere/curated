@@ -4,12 +4,13 @@ from streamlit_extras.app_logo import add_logo
 from pytube import *
 from streamlit_player import st_player
 import random
+from source_ml import *
 
 def display_banner():
     st.image("https://raw.githubusercontent.com/ineelhere/curated/media/media/ic_curated_banner.png")
 
 def display_logo():
-    add_logo(f"https://raw.githubusercontent.com/ineelhere/curated/media/media/ic_curated_logo{random.randint(1,2)}.png")
+    add_logo(f"https://raw.githubusercontent.com/ineelhere/curated/media/media/ic_curated_logo{random.randint(1,5)}.png")
 
 def goto_page(display_text, destination_page):
     if st.button(display_text):
@@ -27,12 +28,20 @@ def magic(playlist_url):
 def embed_yt_video(video_url):
     st_player(video_url)
 
-def yt_content(url):
+def yt_content_live(url):
   videos_dict = magic(url)
   titles_list = videos_dict.keys()
-  title_selected = st.selectbox("Select the lecture you want to watch",titles_list)
+  title_selected = st.selectbox("👇 Select the lecture you want to watch from the dropdown 👇",titles_list)
   if title_selected:
-      embed_yt_video(videos_dict.get(title_selected))   
+      embed_yt_video(videos_dict.get(title_selected))
+
+def yt_content_stored(keyword):
+  if keyword == 'mfml':
+    videos_dict = mfml_dict()
+  titles_list = videos_dict.keys()
+  title_selected = st.selectbox("👇 Select the lecture you want to watch from the dropdown 👇",titles_list)
+  if title_selected:
+      embed_yt_video(videos_dict.get(title_selected))
 
 
 def footer():
