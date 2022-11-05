@@ -24,7 +24,7 @@ def yt_content_stored(keyword):
   elif keyword == 'cs50p':
     videos_dict = cs50p()
   elif keyword == 'cs229':
-    videos_dict = cs229_dict()
+    videos_dict = cs229_dict
   titles_list = videos_dict.keys()
   title_selected = st.selectbox("👇 Select the lecture you want to watch from the dropdown 👇",titles_list)
   if title_selected:
@@ -35,6 +35,7 @@ def footer():
     st.markdown("""
     ___
     <h4> This work is in progess. 🧑‍💻</h4>
+
     [Indraneel Chakraborty](https://www.linkedin.com/in/indraneelchakraborty/) | 2022 | 
       <a href="https://www.linkedin.com/in/indraneelchakraborty/" target="_blank">
         <img src="https://img.icons8.com/fluency/48/000000/linkedin.png" width="20" height="20"/>
