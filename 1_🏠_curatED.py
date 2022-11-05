@@ -14,7 +14,8 @@ colored_header(
 st.info("**An open source project that focuses on curating awesome resources for learning awesome skills.**")
 st.text("\n")
 
-goto_page("I want to learn Python 🐍", "Python 101")
+goto_page("I want to get started with Python 🐍", "Python 101")
+goto_page("I want to get started with Machine Learning 🦾", "Mchine Learning 101")
 
 st.image("https://media.tenor.com/P2cQctPfjpAAAAAC/im-working-on-it-progress.gif")
 

@@ -38,7 +38,7 @@ def yt_content(url):
 def footer():
     st.markdown("""
     ___
-    <h3> This work is in progess.</h3>
+    <h4> This work is in progess. 🧑‍💻</h4>
 
     [Indraneel Chakraborty](https://www.linkedin.com/in/indraneelchakraborty/) | 2022 | 
       <a href="https://www.linkedin.com/in/indraneelchakraborty/" target="_blank">
