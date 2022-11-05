@@ -21,3 +21,7 @@ The course will also discuss recent applications of machine learning, such as to
 
 """)
 yt_content_stored('cs229')
+
+goto_page("Take me Home 🏠", "curatED")
+
+footer()
