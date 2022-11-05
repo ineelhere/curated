@@ -15,12 +15,11 @@ Here are some additional resources you might wish to checkout -
 * About Prof David J. Malan - https://cs.harvard.edu/malan/
 
 Go ahead and binge watch the videos! 😉
+___
 """)
 
-urls_list = get_playlist_video_urls("https://www.youtube.com/playlist?list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V")
-for i in urls_list:
-    embed_yt_video(i)
-    
+yt_content("https://www.youtube.com/playlist?list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V")
+
 goto_page("Take me Home 🏠", "curatED")
 
 footer()
