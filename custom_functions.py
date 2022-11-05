@@ -1,10 +1,15 @@
 import streamlit as st
 from streamlit_extras.switch_page_button import switch_page
+from streamlit_extras.app_logo import add_logo
 from pytube import *
 from streamlit_player import st_player
+import random
 
 def display_banner():
     st.image("https://raw.githubusercontent.com/ineelhere/curated/media/media/ic_curated_banner.png")
+
+def display_logo():
+  add_logo(f"https://raw.githubusercontent.com/ineelhere/curated/media/media/ic_curated_logo{random.randint(1,2)}.png")
 
 def goto_page(display_text, destination_page):
     if st.button(display_text):

@@ -2,6 +2,7 @@ import streamlit as st
 from custom_functions import *
 
 display_banner()
+display_logo()
 
 st.header('CURATED | 🐍 PYTHON 101')
 
