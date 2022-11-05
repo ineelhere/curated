@@ -1,10 +1,9 @@
 import streamlit as st
 from streamlit_extras.switch_page_button import switch_page
 from streamlit_extras.app_logo import add_logo
-from pytube import *
 from streamlit_player import st_player
 import random
-from source_ml import *
+from dict_source import *
 
 def display_banner():
     st.image("https://raw.githubusercontent.com/ineelhere/curated/media/media/ic_curated_banner.png")
@@ -38,6 +37,8 @@ def yt_content_live(url):
 def yt_content_stored(keyword):
   if keyword == 'mfml':
     videos_dict = mfml_dict()
+  elif keyword == 'cs50p':
+    videos_dict = cs50p()
   titles_list = videos_dict.keys()
   title_selected = st.selectbox("👇 Select the lecture you want to watch from the dropdown 👇",titles_list)
   if title_selected:
