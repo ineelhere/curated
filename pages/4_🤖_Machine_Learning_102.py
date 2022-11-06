@@ -7,6 +7,13 @@ display_logo()
 st.header('CURATED | 🤖 ML 102')
 
 st.markdown("""
+Okay, first hear this!
+""")
+embed_yt_video("https://youtu.be/yrtAoBr3iuQ")
+
+st.markdown("""
+____
+### Let's get started now!
 Led by [Andrew Ng](https://www.andrewng.org/), this course provides a broad introduction to machine learning and statistical pattern recognition. 
 
 Topics include: 
