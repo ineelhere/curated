@@ -22,7 +22,7 @@ ___
 * Read more about MFML here - https://cloud.google.com/blog/topics/developers-practitioners/ai-all-humans-course-delight-and-inspire
 
 Enjoy the journey! 💡
-___
+
 """)
 
 yt_content_stored('mfml')
