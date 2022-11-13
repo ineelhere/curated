@@ -23,6 +23,8 @@ def yt_content_stored(keyword):
     videos_dict = mfml_dict()
   elif keyword == 'cs50p':
     videos_dict = cs50p()
+  elif keyword == 'mlex':
+    videos_dict = mlex()
   elif keyword == 'cs229':
     videos_dict = cs229_dict()
   elif keyword == 'streamlit':
