@@ -34,6 +34,8 @@ def yt_content_stored(keyword):
 
 
 def footer():
+    st.write("\n")
+    goto_page("Take me Home 🏠", "curatED")
     st.markdown("""
     ___
     <i>Collaborations are always welcome - https://github.com/ineelhere/curated </i><br>

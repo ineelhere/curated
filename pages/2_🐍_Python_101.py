@@ -20,6 +20,6 @@ ___
 
 yt_content_stored("cs50p")
 
-goto_page("Take me Home 🏠", "curatED")
+
 
 footer()

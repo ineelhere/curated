@@ -36,7 +36,4 @@ ___
 <br><br>
 """, unsafe_allow_html=True)
 
-
-goto_page("Take me Home 🏠", "curatED")
-
 footer()
