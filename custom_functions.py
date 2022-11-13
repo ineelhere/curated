@@ -4,6 +4,7 @@ from streamlit_extras.app_logo import add_logo
 from streamlit_player import st_player
 import random
 from dict_source import *
+import pandas as pd
 
 def display_banner():
     st.image("https://raw.githubusercontent.com/ineelhere/curated/media/media/ic_curated_banner.png")
@@ -36,8 +37,10 @@ def yt_content_stored(keyword):
 
 
 def footer():
+    df = pd.read_json("https://api.quotable.io/random")
     st.write("\n")
     goto_page("Take me Home 🏠", "curatED")
+    
     st.markdown("""
     ___
     <i>Collaborations are always welcome - https://github.com/ineelhere/curated </i><br>
@@ -57,3 +60,4 @@ def footer():
     </div>
     </section>
     </main>    """, unsafe_allow_html=True)
+    st.info(f"*{df.content[0]}*\n-*{df.author[0]}*")
