@@ -10,6 +10,6 @@ st.markdown('''
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd0bw-AmPp0zStQntquZ6I1Ig30B5ShPi0QoWock-lf5GorCQ/viewform?embedded=true" width="640" height="2197" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 ''', unsafe_allow_html=True)
 
-goto_page("Take me Home 🏠", "curatED")
+
 
 footer()

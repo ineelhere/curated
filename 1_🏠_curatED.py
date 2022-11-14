@@ -14,9 +14,12 @@ colored_header(
 st.info("**An open source project that focuses on curating awesome resources for learning awesome skills.**")
 st.text("\n")
 
-goto_page("I want to get started with Python 🐍", "Python 101")
-goto_page("I want to understand the WHYs and WHATs of Machine Learning 🦾", "Machine Learning 101")
-goto_page("I want to get started with the concepts in Machine Learning 🤖", "Machine Learning 102")
+goto_page("Get started with Python 🐍", "Python 101")
+goto_page("Understand the WHYs and WHATs of Machine Learning 🦾", "Machine Learning 101")
+goto_page("Get started with the concepts in Machine Learning 🤖", "Machine Learning 102")
+goto_page("Build cool data apps with Streamlit 🎈", "Streamlit")
+goto_page("Provide/receive support with new Opportunities 🎯", "UPLIFT - Job Support")
+goto_page("Give Feedback about this project 🤝 ", "Feedback")
 
 st.image("https://media.tenor.com/P2cQctPfjpAAAAAC/im-working-on-it-progress.gif")
 

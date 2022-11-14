@@ -29,14 +29,21 @@ yt_content_stored('mfml')
 
 st.markdown("""
 ___
+### Machine Learning Explainability Workshop | Stanford
+Professor Hima Lakkaraju's day-long workshop at Stanford covered modern techniques for interpretable machine learning. 
+Learn more on her website: https://himalakkaraju.github.io/
+""")
+
+yt_content_stored('mlex')
+
+
+st.markdown("""
+___
 ### Consider listening to these podcasts too!
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2ppGzcN7KjeRRDGafyluDb?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/5IaFc479AbjV7u0mh4v1Uy?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3CVF5qpuVMoI12EcXbm04N?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 <br><br>
 """, unsafe_allow_html=True)
-
-
-goto_page("Take me Home 🏠", "curatED")
 
 footer()

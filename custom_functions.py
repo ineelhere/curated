@@ -4,6 +4,7 @@ from streamlit_extras.app_logo import add_logo
 from streamlit_player import st_player
 import random
 from dict_source import *
+import pandas as pd
 
 def display_banner():
     st.image("https://raw.githubusercontent.com/ineelhere/curated/media/media/ic_curated_banner.png")
@@ -23,8 +24,12 @@ def yt_content_stored(keyword):
     videos_dict = mfml_dict()
   elif keyword == 'cs50p':
     videos_dict = cs50p()
+  elif keyword == 'mlex':
+    videos_dict = mlex()
   elif keyword == 'cs229':
     videos_dict = cs229_dict()
+  elif keyword == 'streamlit':
+    videos_dict = streamlit()  
   titles_list = videos_dict.keys()
   title_selected = st.selectbox("👇 Select the lecture you want to watch from the dropdown 👇",titles_list)
   if title_selected:
@@ -32,11 +37,14 @@ def yt_content_stored(keyword):
 
 
 def footer():
+    df = pd.read_json("https://api.quotable.io/random")
+    st.write("\n")
+    goto_page("Take me Home 🏠", "curatED")
+    
     st.markdown("""
     ___
-    <h4> This work is in progess. 🧑‍💻</h4>
-
-    <a href="https://www.linkedin.com/in/indraneelchakraborty/" target="_blank"> Indraneel Chakraborty </a> | 2022 | 
+    <i>Collaborations are always welcome - https://github.com/ineelhere/curated </i><br>
+    Developer Info: <a href="https://www.linkedin.com/in/indraneelchakraborty/" target="_blank"> Indraneel Chakraborty </a> | 2022 | 
       <a href="https://www.linkedin.com/in/indraneelchakraborty/" target="_blank">
         <img src="https://img.icons8.com/fluency/48/000000/linkedin.png" width="20" height="20"/>
       </a>
@@ -52,3 +60,4 @@ def footer():
     </div>
     </section>
     </main>    """, unsafe_allow_html=True)
+    st.info(f"*{df.content[0]}*\n-*{df.author[0]}*")

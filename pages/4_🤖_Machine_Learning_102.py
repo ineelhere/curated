@@ -39,8 +39,7 @@ Topics include:
 The course will also discuss recent applications of machine learning, such as to robotic control, data mining, autonomous navigation, bioinformatics, speech recognition, and text and web data processing.
 
 """)
-yt_content_stored('cs229')
 
-goto_page("Take me Home 🏠", "curatED")
+yt_content_stored('cs229')
 
 footer()

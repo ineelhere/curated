@@ -1,7 +1,7 @@
 #for local reference only
 from pytube import *
 
-urls = Playlist("https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU")
+urls = Playlist("https://www.youtube.com/playlist?list=PLtqF5YXg7GLmCvTswG32NqQypOuYkPRUE")
 
 titles = []
 for video_url in urls:
