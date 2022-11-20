@@ -4,7 +4,7 @@
 #### Visit : https://curated.streamlit.app/
 
 Will be updating periodically <br>
-Collaborations are always welcome. Just raise an issue or a PR! <br>
+Collaborations are always welcome. Just raise an issue or create a PR on the development branch! All developmental releases can be seen/tested here https://curated-dev.streamlit.app/ <br>
 
 ![](https://i.imgur.com/fPVyfoI.gif)
 <br><br>
