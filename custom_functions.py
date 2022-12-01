@@ -46,5 +46,5 @@ def footer():
     <i>Collaborations are always welcome - https://github.com/ineelhere/curated </i><br>
     <a href="https://www.linkedin.com/in/indraneelchakraborty/" target="_blank">
         <img src="https://img.icons8.com/fluency/48/000000/linkedin.png" width="20" height="20"/>
-      </a>[![](https://img.shields.io/github/stars/ineelhere/curated?style=social)](https://github.com/ineelhere/components-hub) &nbsp; [![](https://img.shields.io/twitter/follow/ineelhere?style=social)](https://twitter.com/ineelhere)""", unsafe_allow_html=True)
+      </a>[![](https://img.shields.io/github/stars/ineelhere/curated?style=social)](https://github.com/ineelhere/curated) &nbsp; [![](https://img.shields.io/twitter/follow/ineelhere?style=social)](https://twitter.com/ineelhere)""", unsafe_allow_html=True)
     st.info(f"*{df.content[0]}*\n-*{df.author[0]}*")

@@ -21,7 +21,8 @@ goto_page("Understand the WHYs and WHATs of Machine Learning 🦾", "Machine Lea
 goto_page("Get started with the concepts in Machine Learning 🤖", "Machine Learning 102")
 goto_page("Build cool data apps with Streamlit 🎈", "Streamlit")
 goto_page("Provide/receive support with new Opportunities 🎯", "UPLIFT - Job Support")
-goto_page("Give Feedback about this project 🤝 ", "Feedback")
+goto_page("Give Feedback about this project 🤗 ", "Feedback")
+goto_page("Collaborate with this project! 🤝 ", "Collaborate!")
 
 st.image("https://media.tenor.com/P2cQctPfjpAAAAAC/im-working-on-it-progress.gif")
 
