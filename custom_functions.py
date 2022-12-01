@@ -44,20 +44,7 @@ def footer():
     st.markdown("""
     ___
     <i>Collaborations are always welcome - https://github.com/ineelhere/curated </i><br>
-    Developer Info: <a href="https://www.linkedin.com/in/indraneelchakraborty/" target="_blank"> Indraneel Chakraborty </a> | 2022 | 
-      <a href="https://www.linkedin.com/in/indraneelchakraborty/" target="_blank">
+    <a href="https://www.linkedin.com/in/indraneelchakraborty/" target="_blank">
         <img src="https://img.icons8.com/fluency/48/000000/linkedin.png" width="20" height="20"/>
-      </a>
-      <a href="https://twitter.com/ineelhere" target="_blank">
-        <img src="https://abs.twimg.com/favicons/twitter.ico" alt="Twitter" width="20" height="20">
-      </a>
-      <a href="https://www.youtube.com/channel/UCbIMzl7rOj0FkamVf_aBM8w" target="_blank">
-        <img src="https://www.youtube.com/s/desktop/28b67e7f/img/favicon_48.png" alt="YouTube" width="20" height="20">
-      </a>
-      <a href="https://github.com/ineelhere" target="_blank">
-        <img width="20" height="20" src="https://github.com/fluidicon.png" alt="Github">
-      </a>
-    </div>
-    </section>
-    </main>    """, unsafe_allow_html=True)
+      </a>[![](https://img.shields.io/github/stars/ineelhere/curated?style=social)](https://github.com/ineelhere/components-hub) &nbsp; [![](https://img.shields.io/twitter/follow/ineelhere?style=social)](https://twitter.com/ineelhere)""", unsafe_allow_html=True)
     st.info(f"*{df.content[0]}*\n-*{df.author[0]}*")

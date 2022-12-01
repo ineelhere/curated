@@ -8,7 +8,7 @@ st.header('CURATED | 🦾 ML 101')
 
 st.markdown("""
 ### AlphaGo
-Before we dive deep into ML/AI it is crucial that we understand the **WHY**s and **WHAT**s of the problems we'll be solving. Reality matters more than theory. 
+Before we dive deep into ML/AI it is crucial that we understand the **WHY**s and **WHAT**s of the problems we'll be solving. **Reality matters more than theory.** 
 \n Let's look into the case of `AlphaGo` to understand, what we can do with these capabilities!
 """)
 embed_yt_video("https://youtu.be/WXuK6gekU1Y")

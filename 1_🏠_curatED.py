@@ -2,6 +2,8 @@ import streamlit as st
 from streamlit_extras.colored_header import colored_header
 from custom_functions import *
 
+st.set_page_config("Curated", "⭐", layout="wide")
+
 display_banner()
 display_logo()
 
