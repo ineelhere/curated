@@ -17,6 +17,9 @@ with st.expander("GrowthX - The Phoenix Project", expanded=False):
     <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6996796538110844928" height="1320" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
     """, unsafe_allow_html=True)
 
+with st.expander("Streamlit community listings", expanded = False):
+    st.markdown("Visit https://discuss.streamlit.io/c/jobs/")
+
 with st.expander("LinkedIn Member Post 1 (Also Check Comments)", expanded=False):
     st.markdown("""
     <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6995396654812065792" height="578" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
