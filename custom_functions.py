@@ -29,7 +29,11 @@ def yt_content_stored(keyword):
   elif keyword == 'cs229':
     videos_dict = cs229_dict()
   elif keyword == 'streamlit':
-    videos_dict = streamlit()  
+    videos_dict = streamlit()
+  elif keyword == 'cs230':
+    videos_dict =  cs230()
+  elif keyword == 'deepmind_rl':
+    videos_dict = deepmind_rl()
   titles_list = videos_dict.keys()
   title_selected = st.selectbox("👇 Select the lecture you want to watch from the dropdown 👇",titles_list)
   if title_selected:
