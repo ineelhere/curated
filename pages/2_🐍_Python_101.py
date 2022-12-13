@@ -12,7 +12,7 @@ So, before you start to code, it is very important you understand how to maintai
 Just like you keep a log of your tasks somewhere like a diary or a to do checklist, it is important to track the changes you made to your code since the very beginning of a project. That, we can do with `git`! \n
 """, unsafe_allow_html=True)
 st.info("**Cool fact**: This whole project has been version controlled with Git on GitHub! \n Visit https://github.com/ineelhere/curated")
-st.write("First, watch this video. Dr Max Wilson, from the University of Nottingham, gives us an overview.")
+st.write("First, watch these videos. Dr Max Wilson, from the University of Nottingham, gives us an overview.")
 
 col1, col2 = st.columns(2)
 
