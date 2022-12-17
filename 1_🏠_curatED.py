@@ -19,7 +19,7 @@ st.text("\n")
 goto_page("Get started with Python 🐍", "Python 101")
 goto_page("Understand the WHYs and WHATs of Machine Learning 🦾", "Machine Learning 101")
 goto_page("Get started with the concepts in Machine Learning 🤖", "Machine Learning 102")
-goto_page("Break into Concepts of Statistics without tears 📊", "Statistics 101"
+goto_page("Break into Concepts of Statistics without tears 📊", "Statistics 101")
 goto_page("Build cool data apps with Streamlit 🎈", "Streamlit")
 goto_page("Build Soft skills to improve the power of your thinking 🧠", "THINK")
 goto_page("Provide/receive support with new Opportunities 🎯", "UPLIFT - Job Support")
