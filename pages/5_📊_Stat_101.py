@@ -4,7 +4,7 @@ from custom_functions import *
 display_banner()
 display_logo()
 
-st.header('CURATED | STAT 101')
+st.header('CURATED | 📊 STAT 101')
 st.markdown(""" 
 Statistics is fundamentally very important if you wnat to study Machine Learning. There are multiple sources from which you can study Stat.\n
 We shall provide some sources here.\n            
