@@ -10,6 +10,17 @@ st.write("""The recent layoffs around the world is unfortunate. \n
 
 st.warning("**Always ensure the genuine-ness of the opportunity with the organisation/individual before proceeding further.**")
 
+with st.expander("Careerflow's list of companies currently hiring", expanded=False):
+    st.markdown("""
+    Careerflow provides FREE AI assistant & CRM tools for job seekers. Click  below to view a list of companies hiring directly with Careerflow.
+
+    <a href="https://www.careerflow.ai/still-hiring">https://www.careerflow.ai/still-hiring</a>
+    
+    Careerflow is checking regularly with companies directly to keep this live list up-to-date.
+
+    Thanks to [Puneet Kohli](https://www.linkedin.com/in/punkohl/), Co-Founder at Careerflow for sharing the info!  🤝
+
+    """,unsafe_allow_html=True)
 with st.expander("GrowthX - The Phoenix Project", expanded=False):
     st.markdown("""
     * Main webpage: https://www.growthx.club/phoenix
