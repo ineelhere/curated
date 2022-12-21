@@ -4,7 +4,7 @@ from custom_functions import *
 display_banner()
 display_logo()
 
-st.header('CURATED | 🧠 THINK BEFORE YOU CODE 💡 ')
+st.header('CURATED | 🧠 THINK 💡 ')
 
 col1, col2, col3 = st.columns(3)
 
