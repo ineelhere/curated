@@ -42,6 +42,8 @@ def yt_content_stored(keyword):
     videos_dict = download_data(db_name, 'deepmind_rl', connection_string)
   elif keyword == "stat_fundamentals":
     videos_dict = download_data(db_name, 'stat_fundamentals', connection_string)
+  elif keyword == "statpy":
+    videos_dict = download_data(db_name, 'statpy', connection_string)
 
   titles_list = videos_dict.keys()
   title_selected = st.selectbox("👇 Select the lecture you want to watch from the dropdown 👇",titles_list)
@@ -49,10 +51,11 @@ def yt_content_stored(keyword):
       embed_yt_video(videos_dict.get(title_selected))
 
 
-def footer():
+def footer(flag=1):
     df = pd.read_json("https://api.quotable.io/random")
     st.write("\n")
-    goto_page("Take me Home 🏠", "curatED")
+    if flag==1:
+       goto_page("Take me Home 🏠", "curatED")
     
     st.markdown("""
     ___
