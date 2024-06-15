@@ -5,6 +5,12 @@ from streamlit_player import st_player
 import random
 from dict_source import *
 import pandas as pd
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+connection_string = os.getenv('DBCS')
+db_name = os.getenv('DBNAME')
 
 def display_banner():
     st.image("https://raw.githubusercontent.com/ineelhere/curated/media/media/ic_curated_banner.png")
@@ -21,21 +27,21 @@ def embed_yt_video(video_url):
 
 def yt_content_stored(keyword):
   if keyword == 'mfml':
-    videos_dict = mfml_dict()
+    videos_dict = download_data(db_name, 'mfml', connection_string)
   elif keyword == 'cs50p':
-    videos_dict = cs50p()
+    videos_dict = download_data(db_name, 'cs50p', connection_string)
   elif keyword == 'mlex':
-    videos_dict = mlex()
+    videos_dict = download_data(db_name, 'mlex', connection_string)
   elif keyword == 'cs229':
-    videos_dict = cs229_dict()
+    videos_dict = download_data(db_name, 'cs229', connection_string)
   elif keyword == 'streamlit':
-    videos_dict = streamlit()
+    videos_dict = download_data(db_name, 'streamlit', connection_string)
   elif keyword == 'cs230':
-    videos_dict =  cs230()
+    videos_dict =  download_data(db_name, 'cs230', connection_string)
   elif keyword == 'deepmind_rl':
-    videos_dict = deepmind_rl()
+    videos_dict = download_data(db_name, 'deepmind_rl', connection_string)
   elif keyword == "stat_fundamentals":
-    videos_dict = stat_fundamentals()
+    videos_dict = download_data(db_name, 'stat_fundamentals', connection_string)
 
   titles_list = videos_dict.keys()
   title_selected = st.selectbox("👇 Select the lecture you want to watch from the dropdown 👇",titles_list)
