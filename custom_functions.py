@@ -3,10 +3,13 @@ from streamlit_extras.switch_page_button import switch_page
 from streamlit_extras.app_logo import add_logo
 from streamlit_player import st_player
 import random
-from dict_source import *
 import pandas as pd
 import os
 from dotenv import load_dotenv
+from datetime import datetime
+import pytz
+from pymongo import MongoClient
+import requests
 
 load_dotenv()
 connection_string = os.getenv('DBCS')
@@ -64,3 +67,53 @@ def footer(flag=1):
         <img src="https://img.icons8.com/fluency/48/000000/linkedin.png" width="20" height="20"/>
       </a>[![](https://img.shields.io/github/stars/ineelhere/curated?style=social)](https://github.com/ineelhere/curated) &nbsp; [![](https://img.shields.io/twitter/follow/ineelhere?style=social)](https://twitter.com/ineelhere)""", unsafe_allow_html=True)
     st.info(f"*{df.content[0]}*\n-*{df.author[0]}*")
+    visit_count(connection_string, db_name)
+
+def download_data(db_name, collection_name, connection_string):
+    """
+    Downloads data from MongoDB and returns it as a dictionary.
+
+    :param db_name: Name of the database.
+    :param collection_name: Name of the collection.
+    :param connection_string: MongoDB connection string.
+    :return: Dictionary containing the fetched data.
+    """
+    client = MongoClient(connection_string)
+    db = client[db_name]
+    collection = db[collection_name]
+    
+    # Fetch the data
+    documents = collection.find()
+    
+    # Convert the fetched data into a dictionary
+    data_dict = {doc['title']: doc['url'] for doc in documents}
+    
+    return data_dict
+
+def get_public_ip():
+    try:
+        response = requests.get('https://httpbin.org/ip')
+        response.raise_for_status()
+        return response.json()['origin']
+    except requests.RequestException as e:
+        print(f"Error fetching IP: {e}")
+        return 'unknown'
+
+def visit_count(connection_string, db_name):
+    utc_now = datetime.utcnow().replace(tzinfo=pytz.utc)
+    ist = pytz.timezone('Asia/Kolkata')
+    ist_now = utc_now.astimezone(ist)
+    
+    ip_address = get_public_ip()
+    
+    client = MongoClient(connection_string)
+    db = client[db_name]
+    collection = db['visit_count']
+    
+    document = {
+        'ist_time': ist_now.strftime('%d-%B-%Y, %I:%M:%S %p IST'),
+        'utc_time': utc_now.strftime('%d-%B-%Y, %I:%M:%S %p UTC'),
+        'ip_address': ip_address
+    }
+    
+    collection.insert_one(document)
