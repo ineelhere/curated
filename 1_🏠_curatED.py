@@ -3,7 +3,9 @@ from streamlit_extras.colored_header import colored_header
 from custom_functions import *
 
 # Set page title and favicon
-st.set_page_config("Curated", "⭐", initial_sidebar_state="collapsed", layout="wide")
+st.set_page_config("Curated", "⭐", initial_sidebar_state="collapsed")
+st.toast('Click on the sidebar to navigate to different pages', icon='👈')
+st.toast('Welcome to CURATED!', icon='🎉')
 
 # Display banner and logo
 display_banner()
